@@ -9,29 +9,11 @@
                 "shippingGroups": [
                     {
                         "id": "sg10358",
-                        "specialInstructions": {},
-                        "handlingInstructions": [],
-                        "trackingNumber": null,
-                        "priceInfo": {
-                            "amount": 25,
-                            "currencyCode": "USD",
-                            "amountIsFinal": false,
-                            "discounted": false,
-                            "rawShipping": 25
-                        },
+                        "specialInstructions": "",
+                        "handlingInstructions": "",
+                        "trackingNumber": null,                        
                         "shippingGroupClassType": "hardgoodShippingGroup",
-                        "description": "sg10358",
-                        "commerceItemRelationships": [
-                            {
-                                "amount": 0,
-                                "id": "r10329",
-                                "commerceItemExternalId": null,
-                                "relationshipType": "SHIPPINGQUANTITY",
-                                "returnedQuantity": 0,
-                                "quantity": 3,
-                                "commerceItemId": "ci1000358"
-                            }
-                        ],
+                        "description": "sg10358",                        
                         "submittedDate": null,
                         "actualShipDate": null,
                         "state": "INITIAL",
@@ -65,36 +47,7 @@
                     {
                         "id": "ci1000358",
                         "productDisplayName": "Striped Button Down Shirt",
-                        "returnedQuantity": 0,
-                        "priceInfo": {
-                            "amount": 29.97,
-                            "quantityDiscounted": 0,
-                            "discountable": true,
-                            "priceListId": "listPrices",
-                            "onSale": false,
-                            "rawTotalPrice": 29.97,
-                            "currencyCode": "USD",
-                            "amountIsFinal": false,
-                            "listPrice": 9.99,
-                            "discounted": false,
-                            "currentPriceDetailsSorted": [
-                                {
-                                    "amount": 29.97,
-                                    "currencyCode": "USD",
-                                    "tax": 3.43,
-                                    "range": {
-                                        "lowBound": 0,
-                                        "highBound": 2,
-                                        "size": 3
-                                    },
-                                    "amountIsFinal": false,
-                                    "discounted": false,
-                                    "quantity": 3,
-                                    "detailedUnitPrice": 9.99
-                                }
-                            ],
-                            "salePrice": 0
-                        },
+                        "returnedQuantity": 0,                        
                         "catalogId": null,
                         "quantity": 3,
                         "catalogRefId": "Sku_3Eii",
@@ -121,18 +74,6 @@
                     {
                         "id": "pg10358",
                         "amount": 58.4,
-                        "authorizationStatus": [
-                            {
-                                "amount": 58.4,
-                                "errorMessage": "Request was processed successfully.",
-                                "authorizationDecision": "ACCEPT",
-                                "transactionId": "4098256070700176195662",
-                                "reasonCode": "100",
-                                "transactionUuid": "c16865b607e34dbc860b670b0f2b27bb",
-                                "transactionSuccess": true,
-                                "currency": "USD"
-                            }
-                        ],
                         "currencyCode": "USD",
                         "token": "9997000128476419",
                         "expirationMonth": "05",
@@ -177,16 +118,8 @@
                     "districtTax": 0
                 },
                 "profileId": "se-570031",
-                "creationTime": 1401739604000,
-                "salesChannel": "default",
-                "relationships": [
-                    {
-                        "amount": 58.4,
-                        "id": "r10331",
-                        "relationshipType": "ORDERAMOUNTREMAINING",
-                        "paymentGroupId": "pg10358"
-                    }
-                ],
+                "creationTime": "10/10/2020",
+                "salesChannel": "default",              
                 "totalCommerceItemCount": 3
             }
         },
@@ -199,38 +132,11 @@
                 "shippingGroups": [
                     {
                         "id": "sg85475",
-                        "specialInstructions": {},
-                        "handlingInstructions": [],
-                        "trackingNumber": null,
-                        "priceInfo": {
-                            "amount": 50,
-                            "currencyCode": "USD",
-                            "amountIsFinal": false,
-                            "discounted": false,
-                            "rawShipping": 50
-                        },
+                        "specialInstructions": "",
+                        "handlingInstructions": "",
+                        "trackingNumber": null,                        
                         "shippingGroupClassType": "hardgoodShippingGroup",
-                        "description": "sg10359",
-                        "commerceItemRelationships": [
-                            {
-                                "amount": 10.99,
-                                "id": "r10330",
-                                "commerceItemExternalId": null,
-                                "relationshipType": "SHIPPINGQUANTITY",
-                                "returnedQuantity": 0,
-                                "quantity": 2,
-                                "commerceItemId": "ci1670358"
-                            },
-                            {
-                                "amount": 59.99,
-                                "id": "r10330",
-                                "commerceItemExternalId": null,
-                                "relationshipType": "SHIPPINGQUANTITY",
-                                "returnedQuantity": 0,
-                                "quantity": 2,
-                                "commerceItemId": "ci135877"
-                            }
-                        ],
+                        "description": "sg10359",                        
                         "submittedDate": null,
                         "actualShipDate": null,
                         "state": "INITIAL",
@@ -264,36 +170,7 @@
                     {
                         "id": "ci1670358",
                         "productDisplayName": "Striped Button Down Shirt",
-                        "returnedQuantity": 0,
-                        "priceInfo": {
-                            "amount": 29.97,
-                            "quantityDiscounted": 0,
-                            "discountable": true,
-                            "priceListId": "listPrices",
-                            "onSale": false,
-                            "rawTotalPrice": 29.97,
-                            "currencyCode": "USD",
-                            "amountIsFinal": false,
-                            "listPrice": 9.99,
-                            "discounted": false,
-                            "currentPriceDetailsSorted": [
-                                {
-                                    "amount": 29.97,
-                                    "currencyCode": "USD",
-                                    "tax": 3.43,
-                                    "range": {
-                                        "lowBound": 0,
-                                        "highBound": 2,
-                                        "size": 3
-                                    },
-                                    "amountIsFinal": false,
-                                    "discounted": false,
-                                    "quantity": 3,
-                                    "detailedUnitPrice": 9.99
-                                }
-                            ],
-                            "salePrice": 0
-                        },
+                        "returnedQuantity": 0,                        
                         "catalogId": null,
                         "quantity": 2,
                         "catalogRefId": "Sku_3Eii",
@@ -305,35 +182,6 @@
                         "id": "ci135877",
                         "productDisplayName": "Polka Trouser",
                         "returnedQuantity": 0,
-                        "priceInfo": {
-                            "amount": 29.97,
-                            "quantityDiscounted": 0,
-                            "discountable": true,
-                            "priceListId": "listPrices",
-                            "onSale": false,
-                            "rawTotalPrice": 29.97,
-                            "currencyCode": "USD",
-                            "amountIsFinal": false,
-                            "listPrice": 9.99,
-                            "discounted": false,
-                            "currentPriceDetailsSorted": [
-                                {
-                                    "amount": 29.97,
-                                    "currencyCode": "USD",
-                                    "tax": 3.43,
-                                    "range": {
-                                        "lowBound": 0,
-                                        "highBound": 2,
-                                        "size": 3
-                                    },
-                                    "amountIsFinal": false,
-                                    "discounted": false,
-                                    "quantity": 3,
-                                    "detailedUnitPrice": 9.99
-                                }
-                            ],
-                            "salePrice": 0
-                        },
                         "catalogId": null,
                         "quantity": 2,
                         "catalogRefId": "Sku_3Eii",
@@ -359,19 +207,7 @@
                 "paymentGroups": [
                     {
                         "id": "sg85475",
-                        "amount": 58.4,
-                        "authorizationStatus": [
-                            {
-                                "amount": 58.4,
-                                "errorMessage": "Request was processed successfully.",
-                                "authorizationDecision": "ACCEPT",
-                                "transactionId": "4098256070700176195662",
-                                "reasonCode": "100",
-                                "transactionUuid": "c16865b607e34dbc860b670b0f2b27bb",
-                                "transactionSuccess": true,
-                                "currency": "USD"
-                            }
-                        ],
+                        "amount": 58.4,                        
                         "currencyCode": "USD",
                         "token": "9997000128476419",
                         "expirationMonth": "05",
@@ -416,16 +252,8 @@
                     "districtTax": 0
                 },
                 "profileId": "se-570031",
-                "creationTime": 1401739604000,
-                "salesChannel": "default",
-                "relationships": [
-                    {
-                        "amount": 58.4,
-                        "id": "r10331",
-                        "relationshipType": "ORDERAMOUNTREMAINING",
-                        "paymentGroupId": "pg1134"
-                    }
-                ],
+                "creationTime": "10/20/2020",
+                "salesChannel": "default",                
                 "totalCommerceItemCount": 3
             }
         },
@@ -438,29 +266,11 @@
                 "shippingGroups": [
                     {
                         "id": "sg1960",
-                        "specialInstructions": {},
-                        "handlingInstructions": [],
-                        "trackingNumber": null,
-                        "priceInfo": {
-                            "amount": 25,
-                            "currencyCode": "USD",
-                            "amountIsFinal": false,
-                            "discounted": false,
-                            "rawShipping": 25
-                        },
+                        "specialInstructions": "",
+                        "handlingInstructions": "",
+                        "trackingNumber": null,                        
                         "shippingGroupClassType": "hardgoodShippingGroup",
-                        "description": "sg1960",
-                        "commerceItemRelationships": [
-                            {
-                                "amount": 0,
-                                "id": "r10999",
-                                "commerceItemExternalId": null,
-                                "relationshipType": "SHIPPINGQUANTITY",
-                                "returnedQuantity": 0,
-                                "quantity": 1,
-                                "commerceItemId": "ci1000358"
-                            }
-                        ],
+                        "description": "sg1960",                        
                         "submittedDate": null,
                         "actualShipDate": null,
                         "state": "INITIAL",
@@ -495,35 +305,6 @@
                         "id": "ci1000358",
                         "productDisplayName": "Striped Button Down Shirt",
                         "returnedQuantity": 0,
-                        "priceInfo": {
-                            "amount": 29.97,
-                            "quantityDiscounted": 0,
-                            "discountable": true,
-                            "priceListId": "listPrices",
-                            "onSale": false,
-                            "rawTotalPrice": 29.97,
-                            "currencyCode": "USD",
-                            "amountIsFinal": false,
-                            "listPrice": 9.99,
-                            "discounted": false,
-                            "currentPriceDetailsSorted": [
-                                {
-                                    "amount": 29.97,
-                                    "currencyCode": "USD",
-                                    "tax": 3.43,
-                                    "range": {
-                                        "lowBound": 0,
-                                        "highBound": 2,
-                                        "size": 3
-                                    },
-                                    "amountIsFinal": false,
-                                    "discounted": false,
-                                    "quantity": 1,
-                                    "detailedUnitPrice": 9.99
-                                }
-                            ],
-                            "salePrice": 0
-                        },
                         "catalogId": null,
                         "quantity": 1,
                         "catalogRefId": "Sku_3Eii",
@@ -549,19 +330,7 @@
                 "paymentGroups": [
                     {
                         "id": "pg1960",
-                        "amount": 58.4,
-                        "authorizationStatus": [
-                            {
-                                "amount": 58.4,
-                                "errorMessage": "Request was processed successfully.",
-                                "authorizationDecision": "ACCEPT",
-                                "transactionId": "4098256070700176195662",
-                                "reasonCode": "100",
-                                "transactionUuid": "c16865b607e34dbc860b670b0f2b27bb",
-                                "transactionSuccess": true,
-                                "currency": "USD"
-                            }
-                        ],
+                        "amount": 58.4,                        
                         "currencyCode": "USD",
                         "token": "9997000128476419",
                         "expirationMonth": "05",
@@ -606,16 +375,8 @@
                     "districtTax": 0
                 },
                 "profileId": "se-570031",
-                "creationTime": 1401739604000,
+                "creationTime": "10/30/2020",
                 "salesChannel": "default",
-                "relationships": [
-                    {
-                        "amount": 58.4,
-                        "id": "r10331",
-                        "relationshipType": "ORDERAMOUNTREMAINING",
-                        "paymentGroupId": "pg10358"
-                    }
-                ],
                 "totalCommerceItemCount": 3
             }
         }
