@@ -26,16 +26,31 @@ def read_order():
             aws_secret_access_key=aws_secret_access_key
         )
 
-        with open('sample_order.json','wb') as f:
-            s3.download_fileobj('download-testing-10202020','sample_order.json', f)        
+        
+        files = s3.list_objects_v2(Bucket='download-testing-10202020', Prefix='sample')
 
-        with open('sample_order.json', 'r') as f:
-            json_data = json.load(f)
+        for file in files['Contents']:
+            # print(file['Key'])
+            if file['Key'].endswith('json'):
+                file_name = file['Key']
+                with open(file_name,'wb') as f:
+                    s3.download_fileobj('download-testing-10202020',file_name,f)
 
-        for order in json_data['orders']:
-            data = order['order']['priceInfo']
+                with open(file_name, 'r') as f:
+                    json_data = json.load(f)     
 
-            priceInfo_insert(data)
+                for order in json_data['orders']:
+                    data = order['order']['priceInfo']
+                    priceInfo_insert(data)
+
+                copy_source = {
+                        'Bucket': 'download-testing-10202020',
+                        'Key': file_name
+                    }
+
+                s3.copy(CopySource=copy_source,Bucket='archive-orders',Key=file_name)
+
+                s3.delete_object(Bucket='download-testing-10202020',Key='sample_order.json')
 
         conn.commit()
         conn.close()
@@ -50,11 +65,19 @@ def read_order():
 def priceInfo_insert(data):
     try:
         crsr = conn.cursor()
-        crsr.execute("INSERT INTO priceInfo(amount,total,shipping,currencycode,tax,amountisfinal,discounted,manualadjustmenttotal,rawsubtotal,discountamount) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",
-                     (data['amount'], data['total'], data['shipping'], data['currencyCode'], data['tax'], data['amountIsFinal'], data['discounted'], data['manualAdjustmentTotal'], data['rawSubtotal'], data['discountAmount']))
+        crsr.execute("""INSERT INTO priceInfo(amount,total,shipping,currencycode,tax,amountisfinal
+                        ,discounted,manualadjustmenttotal,rawsubtotal,discountamount) 
+                        VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)""",
+                     (data['amount'], data['total'], data['shipping'], data['currencyCode']
+                     , data['tax'], data['amountIsFinal'], data['discounted']
+                     , data['manualAdjustmentTotal'], data['rawSubtotal']
+                     , data['discountAmount']))
 
     except(Exception, ps.DatabaseError) as error:
         print(error)
+
+
+
 
 
 if __name__ == "__main__":
